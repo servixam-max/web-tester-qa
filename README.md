@@ -10,4 +10,4 @@ npx playwright install chromium
 npm test
 ```
 
-The test opens `https://www.epam.com/`, opens **Services**, follows **Explore Our Client Work**, and checks that **Client Work** is visible. Network restrictions or changes to the live site may affect the test result.
+The test opens `https://www.epam.com/`, selects **Services**, clicks **Explore Our Client Work**, and verifies visible **Client Work** text. EPAM is protected by a web application firewall in some environments; when blocked (for example HTTP 403), rerun from an approved browser/network. A blocked run is reported as a failure and is not treated as a pass.
